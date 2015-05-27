@@ -1,0 +1,47 @@
+body {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Open Sans', Arial;
+}
+
+a {
+    color: rgba(255, 255, 255, .6);
+    text-decoration: none;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+a:hover {
+    color: #fff;
+}
+
+#wrapper {
+  display: none;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 220px;
+}
+
+.countries {
+    text-align: center;
+}
+.countries ul {
+    list-style-type: none;
+    margin: 50px auto;
+    padding: 0;
+}
+.countries ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+.countries ul li img {
+    display: block;
+    margin-bottom: 10px;
+}
