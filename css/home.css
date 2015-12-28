@@ -9,43 +9,51 @@ body {
 }
 
 a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .4);
     text-decoration: none;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -o-transition: color .5s;
-    transition: color .5s;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
 }
 a:hover {
     color: #fff;
 }
 
+h3 {
+  margin: 0;
+  font-weight: 300;
+}
+
 #wrapper {
-  display: none;
+  text-align: center;
+  visibility: hidden;
+  width: 300px;
 }
 
 .logo {
   background: url(../img/logo.png) center center no-repeat;
-  height: 125px;
+  /*height: 125px;*/
+  height: 80px;
   margin: 0 auto;
-  text-align: center;
   text-indent: -99999999px;
   width: 220px;
 }
 
 .countries {
-    text-align: center;
+  text-align: center;
 }
-.countries ul {
-    list-style-type: none;
-    margin: 50px auto;
-    padding: 0;
+
+.country-selector {
+  list-style-type: none;
+  margin: 50px auto;
+  padding: 0;
 }
-.countries ul li {
-    display: inline-block;
-    margin: 0 30px;
+.country-selector li {
+  display: inline-block;
+  margin: 0 15px;
 }
-.countries ul li img {
-    display: block;
-    margin-bottom: 10px;
+.country-selector li img {
+  display: block;
+  margin: 0 auto 10px auto;
 }
