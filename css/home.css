@@ -1,9 +1,4 @@
 body {
-    background: url(../img/bg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     color: #fff;
     font-family: 'Open Sans', Arial;
 }
@@ -26,6 +21,11 @@ h3 {
 }
 
 #wrapper {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -41,7 +41,6 @@ h3 {
 
 .logo {
   background: url(../img/logo.png) center center no-repeat;
-  /*height: 125px;*/
   height: 80px;
   margin: 0 auto;
   text-indent: -99999999px;
