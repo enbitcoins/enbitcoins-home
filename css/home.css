@@ -88,8 +88,8 @@ ul, li, a {
 
 .page-wrap .content {
   background-color: #fff;
-  border: 1px solid #eee;
   border-radius: 4px;
+  border-top: 4px solid transparent;
   margin-bottom: 10px;
   padding: 10px 20px 20px 20px;
 }
@@ -131,7 +131,30 @@ ul, li, a {
   margin: 0 auto 10px auto;
 }
 
+/* Pagos */
+#pagos {
+  border-top-color: #27ae60;
+}
+
+/* Remesas */
+#remesas {
+  border-top-color: #e96c25;
+}
+
+#remesas .remesa-step a {
+  background-color: rgba(0,0,0,.05);
+  padding: 10px;
+  border-radius: 4px;
+  color: #666;
+  text-decoration: none;
+  display: block;
+}
+
 /* FAQS*/
+#faqs {
+  border-top-color: #3499e0;
+}
+
 #faqs h4 {
   font-weight: 700;
 }
