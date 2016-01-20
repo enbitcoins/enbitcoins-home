@@ -155,8 +155,17 @@ ul, li, a {
   border-top-color: #3499e0;
 }
 
-#faqs h4 {
-  font-weight: 700;
+/* Prensa */
+#prensa {
+  border-top-color: #3499e0;
+}
+
+.prensa-links a {
+  opacity: 0.6;
+}
+
+.prensa-links a:hover {
+  opacity: 1;
 }
 
 /* Footer */
