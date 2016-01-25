@@ -22,9 +22,9 @@
   <link rel="icon" type="image/png" href="/favicon.png">
 
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,700">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <nav id="navbar">
@@ -43,7 +43,7 @@
           <a href="/faq">FAQ</a>
         </li>
         <li class="hidden-xs">
-          <a href="mailto:info@enbitcoins.com?Subject=Consulta%20web">Contacto</a>
+          <a href="#" data-toggle="modal" data-target="#contactModal">Contacto</a>
         </li>
       </ul>
     </div>
@@ -64,7 +64,7 @@
         </p>
 
         <div class="col-md-12">
-          <span class="text-muted countries-legend">
+          <span class="text-muted hidden-xs countries-legend">
             Estamos presentes en 3 países y soportamos más de 10000 empresas.
           </span>
           <hr>
@@ -102,11 +102,11 @@
         <h2>
           <i class="fa fa-paper-plane-o text-orange"></i>
           Remesas
-          <small class="text-muted">¡Muy Pronto!</small>
+          <small class="text-muted">¡Pronto!</small>
         </h2>
 
         <p>
-          Envía y recibe dinero entre países de la forma más rápida y segura.
+          Dentro de poco vas a poder enviar y recibir dinero entre países de la forma más rápida y segura.
         </p>
 
         <hr>
@@ -131,13 +131,13 @@
         </h2>
 
         <div class="row text-center prensa-links">
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6 prensa-item">
             <a href="http://criptonoticias.com/bitcoin-brothers-dos-empresas-bitcoin-en-una" title="enBitcoins en CriptoNoticias" target="_blank">
               <img src="/img/press/criptonoticias.png" alt="CriptoNoticias" height="50">
             </a>
           </div>
-          <div class="col-xs-12 col-md-6">
-            <a href="http://cointelegraph.com/news/116098/argentina-based-payment-operator-enbitcoins-expands-to-colombia" title="enBitcoins en The Cointelegraph" target="_blank">
+          <div class="col-xs-12 col-md-6 prensa-item">
+            <a href="http://cointelegraph.com/ref5330/news/116098/argentina-based-payment-operator-enbitcoins-expands-to-colombia" title="enBitcoins en The Cointelegraph" target="_blank">
               <img src="/img/press/cointelegraph.png" alt="The Cointelegraph" height="50">
             </a>
           </div>
@@ -216,6 +216,41 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="modal-title" id="contactModalLabel">Contacto</h3>
+        </div>
+        <form id="contact-form">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="contact-email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="msg">Mensaje</label>
+              <textarea id="contact-msg" name="msg" rows="3" class="form-control" required></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-success btn-send">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

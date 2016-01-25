@@ -39,6 +39,25 @@ ul, li, a {
   color: #3499e0;
 }
 
+/* Overwrites*/
+.btn-success {
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+
+.btn-success.active:hover,
+.btn-success.disabled,
+.btn-success:active,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.btn-success:focus,
+.btn-success:hover,
+.btn-success[disabled],
+.btn-success[disabled]:hover {
+  background-color: #38bf71;
+  border-color: #38bf71;
+}
+
 /* Navbar */
 #navbar {
   background: #fff;
@@ -141,6 +160,10 @@ ul, li, a {
   border-top-color: #e96c25;
 }
 
+#remesas .remesa-step {
+  margin-bottom: 10px;
+}
+
 #remesas .remesa-step a {
   background-color: rgba(0,0,0,.05);
   padding: 10px;
@@ -155,13 +178,26 @@ ul, li, a {
   border-top-color: #3499e0;
 }
 
+#faqs h4 {
+  font-weight: bold;
+}
+
 /* Prensa */
 #prensa {
   border-top-color: #3499e0;
 }
 
+.prensa-links .prensa-item {
+  margin-bottom: 20px;
+}
+
 .prensa-links a {
   opacity: 0.6;
+  -o-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -webkit-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  transition: opacity .3s;
 }
 
 .prensa-links a:hover {
@@ -179,16 +215,19 @@ ul, li, a {
   color: rgba(255,255,255,.7);
 }
 
-.footer a,
+.footer a {
+  color: #aaa;
+    text-decoration: none !important;
+    -o-transition: color .3s;
+    -moz-transition: color .3s;
+    -webkit-transition: color .3s;
+    -ms-transition: color .3s;
+    transition: color .3s;
+}
+
 .footer a:hover,
 .footer a:focus {
-    color: #27ae60;
-    text-decoration: none !important;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
+  color: #27ae60;
 }
 
 .footer .logo-footer {
@@ -227,9 +266,7 @@ ul, li, a {
   background-color: transparent;
   border: 0;
   border-bottom: 1px dotted #444;
-  color: #aaa;
   padding-left: 0;
-  transition: 0.3s;
 }
 
 .footer .social-networks {
