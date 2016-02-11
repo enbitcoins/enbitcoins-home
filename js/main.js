@@ -1,8 +1,19 @@
 $(document).on('ready', function () {
 
+  var apiUrl = 'https://api.enbitcoins.com/v1';
+
   var $modal = $('#contactModal'),
       $contactForm = $('#contact-form'),
-      $btnSend = $('.btn-send');
+      $btnSend = $('.btn-send'),
+      $countrySelector = $('.country-selector');
+
+
+  $.getJSON(apiUrl + '/ticker', function (data) {
+    data.forEach(function (item) {
+      var html = '<div class="col-xs-12 col-md-4"><a href="https://' + item.country.slug + '.enbitcoins.com" title="' + item.country.name + '" class="country-link" target="_blank"><img src="/img/flag-' + item.country.slug + '.png" alt="' + item.country.name + '"><span>' + item.country.name + '</span><br><span>(' + item.country.code + ' ' + item.btc + ')</span></a></div>';
+      $countrySelector.append(html);
+    });
+  });
 
   $modal.on('shown.bs.modal', function () {
     $('#contact-email').focus();
@@ -19,7 +30,7 @@ $(document).on('ready', function () {
 
     if ( ! email || ! msg) return alert('Debes completar todos los campos.');
 
-    $.post('https://api.enbitcoins.com/v1/contact?country=argentina', {
+    $.post(apiUrl + '/contact?country=argentina', {
       msg: msg,
       email: email
     }).success(function () {
