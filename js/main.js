@@ -9,6 +9,8 @@ $(document).on('ready', function () {
 
 
   $.getJSON(apiUrl + '/ticker', function (data) {
+    $('#country-counter').text(data.length);
+
     data.forEach(function (item) {
       var html = '<div class="col-xs-12 col-md-3"><a href="https://' + item.country.slug + '.enbitcoins.com" title="' + item.country.name + '" class="country-link" target="_blank"><img src="/img/flag-' + item.country.slug + '.png" alt="' + item.country.name + '"><span>' + item.country.name + '</span><br><small>(' + item.country.code + ' ' + item.btc + ')</small></a></div>';
       $countrySelector.append(html);
